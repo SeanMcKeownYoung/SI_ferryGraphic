@@ -35,7 +35,7 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(0, 0, 0);
-    
+    background-image: src="images/WAVES-for-si.gif";
   }
 
 
@@ -106,11 +106,54 @@ h3 {
 
   }
 
-  
+  .flowChart01 {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    display: flexbox;
+  } 
 
-btn {
-    color: aquamarine;
-}
+  .flex-grid {
+    display: flex;
+  }
+  .flex-grid .col {
+    flex: 1;
+  }
+  .flex-grid-thirds {
+    display: flex;
+    justify-content: space-between;
+  }
+  .flex-grid-thirds .col {
+    width: 32%;
+  }
+  
+  @media (max-width: 400px) {
+    .flex-grid,
+    .flex-grid-thirds {
+      display: block;
+      .col {
+        width: 100%;
+        margin: 0 0 10px 0;
+      }
+    }
+  }
+  
+  
+  
+  
+  * {
+    box-sizing: border-box;
+  }
+  body {
+    padding: 20px;
+  }
+  .flex-grid { 
+    margin: 0 0 20px 0;
+  }
+  .col {
+    background: transparent;
+    padding: 20px;
+  }
 
 .blue {
     background-color: #075d8f;
@@ -118,3 +161,24 @@ btn {
     width: 100vw;
 
   }
+.button {
+    background-color: #d00c0c;
+    height: 120px;
+    width: 120px;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 50%;
+    transition: 0.7s;
+  }
+
+  .button:hover {
+    background-color: #460303;
+    transition: 0.7s;
+    transform: scale(150%);
+}
