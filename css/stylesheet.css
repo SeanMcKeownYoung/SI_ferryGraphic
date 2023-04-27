@@ -35,6 +35,7 @@ body {
     margin: 0;
     padding: 0;
     color: rgb(0, 0, 0);
+    
   }
 
 
@@ -99,8 +100,9 @@ h3 {
   
   .image2 {
     position: absolute;
-    width: 500px;
-    top: 1vh;
+    width: 30vw;
+    min-width: 350px;
+    top: 1.5vh;
 
   }
 
@@ -110,9 +112,9 @@ btn {
     color: aquamarine;
 }
 
+.blue {
+    background-color: #075d8f;
+    height: 100vh;
+    width: 100vw;
 
-
-
-.ferryPosition {
-
-}
+  }
