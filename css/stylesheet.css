@@ -2,7 +2,7 @@
 
 @font-face {
     font-family: 'tiempos_headlineblack';
-    src: url('css/tiempos_headline-black-webfont.woff2') format('woff2'),
+    src: url('tiempos_headline-black-webfont.woff2') format('woff2'),
          url('css/tiempos_headline-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -13,14 +13,14 @@
     font-family: 'benton_sansbold';
     src: url('css/bentonsans-bold_sot-webfont.woff2') format('woff2'),
          url('css/bentonsans-bold_sot-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+    font-weight: bold;
+    font-style: bold;
 }
 
 
 @font-face {
     font-family: 'benton_sansregular';
-    src: url('css/bentonsans-regular_sot-webfont.woff2') format('woff2'),
+    src: url('bentonsans-regular_sot-webfont.woff2') format('woff2'),
          url('css/bentonsans-regular_sot-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
@@ -37,12 +37,7 @@ body {
     color: rgb(0, 0, 0);
   }
 
-.blue {
-    background-color: #075d8f;
-    height: 100vh;
-    width: 100vw;
 
-  }
 .topWrap {
     background-color: white;
 }
@@ -54,10 +49,8 @@ header {
     padding-top: 50px;
     padding-left: 30px;
     padding-right: 30px;
-    padding-bottom: 120px;
     text-align: center;
-    
-      }
+}
 h4 {
     font-family: 'benton_sansbold', sans-serif;
 	font-size: 16px;
@@ -88,40 +81,38 @@ h3 {
 
 
   /*! Graphic elements */  
-
-
-  .box {
+  .parent {
+    position: relative;
+    top: 0;
+    left: 0;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: white;
   }
-  .imgwrap {
-     width: 50%; /*or whatever you choose*/
-     margin: auto;
-     background-color: white;
+  
+  .image1 {
+    position: relative;
+    width: 100vw;
+    top: 2vh;
+    left: 0;
+
   }
-  .imgwrap img {
-    margin: 0;
+  
+  .image2 {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -48%);
-    display: block;
-    width: 100%;
-    max-width: 800px; /*actual image width*/
-    height: auto; /* maintain aspect ratio*/
-    margin: auto; /*optional centering of image*/
-    
+    width: 500px;
+    top: 1vh;
+
   }
-  .img-fluid {
-    width: 100%
-    
-  }
-.container-fluid {
-    width: 100%
-}
+
+  
+
 btn {
     color: aquamarine;
+}
+
+
+
+
+.ferryPosition {
+
 }
