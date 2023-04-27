@@ -3,7 +3,7 @@
 @font-face {
     font-family: 'tiempos_headlineblack';
     src: url('css/tiempos_headline-black-webfont.woff2') format('woff2'),
-         url('tiempos_headline-black-webfont.woff') format('woff');
+         url('css/tiempos_headline-black-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
