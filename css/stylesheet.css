@@ -1,0 +1,127 @@
+/*! Fonts */
+
+@font-face {
+    font-family: 'tiempos_headlineblack';
+    src: url('tiempos_headline-black-webfont.woff2') format('woff2'),
+         url('tiempos_headline-black-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'benton_sansbold';
+    src: url('bentonsans-bold_sot-webfont.woff2') format('woff2'),
+         url('bentonsans-bold_sot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'benton_sansregular';
+    src: url('bentonsans-regular_sot-webfont.woff2') format('woff2'),
+         url('bentonsans-regular_sot-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/*! All */   
+body {
+    font-family: 'benton_sansregular', sans-serif;
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    color: rgb(0, 0, 0);
+  }
+
+.blue {
+    background-color: #075d8f;
+    height: 100vh;
+    width: 100vw;
+
+  }
+.topWrap {
+    background-color: white;
+}
+
+header {
+	max-width: 930px; 
+	margin: 0 auto !important; 
+	float: none !important; 
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 120px;
+    text-align: center;
+    
+      }
+h4 {
+    font-family: 'benton_sansbold', sans-serif;
+	font-size: 16px;
+    text-transform: uppercase; 
+    padding-bottom: 50px;
+    color: #075d8f;
+}
+
+h1 {
+    font-family: 'tiempos_headlineblack', serif;
+	font-size:     56px;
+	font-style:    normal;
+	margin-bottom: 18px;
+    color: rgb(57, 57, 57);
+    }
+
+h2 {
+    font-family: 'tiempos_headlineblack', serif;
+	font-size: 22px;
+    margin-bottom: 18px;
+    color: rgb(57, 57, 57);
+}
+h3 {
+    font-family: 'benton_sansregular', sans-serif;
+	font-size: 16px;
+    line-height: 34px;
+}
+
+
+  /*! Graphic elements */  
+
+
+  .box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+  }
+  .imgwrap {
+     width: 50%; /*or whatever you choose*/
+     margin: auto;
+     background-color: white;
+  }
+  .imgwrap img {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -48%);
+    display: block;
+    width: 100%;
+    max-width: 800px; /*actual image width*/
+    height: auto; /* maintain aspect ratio*/
+    margin: auto; /*optional centering of image*/
+    
+  }
+  .img-fluid {
+    width: 100%
+    
+  }
+.container-fluid {
+    width: 100%
+}
+btn {
+    color: aquamarine;
+}
