@@ -11,8 +11,8 @@
 
 @font-face {
     font-family: 'benton_sansbold';
-    src: url('bentonsans-bold_sot-webfont.woff2') format('woff2'),
-         url('bentonsans-bold_sot-webfont.woff') format('woff');
+    src: url('css/bentonsans-bold_sot-webfont.woff2') format('woff2'),
+         url('css/bentonsans-bold_sot-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -20,8 +20,8 @@
 
 @font-face {
     font-family: 'benton_sansregular';
-    src: url('bentonsans-regular_sot-webfont.woff2') format('woff2'),
-         url('bentonsans-regular_sot-webfont.woff') format('woff');
+    src: url('css/bentonsans-regular_sot-webfont.woff2') format('woff2'),
+         url('css/bentonsans-regular_sot-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
