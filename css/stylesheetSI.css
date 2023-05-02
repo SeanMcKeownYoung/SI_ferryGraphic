@@ -1,0 +1,294 @@
+/*! Fonts */
+
+/*! Fonts */
+
+@font-face {
+  font-family: 'tiempos_headlineblack';
+  src: url('tiempos_headline-black-webfont.woff2') format('woff2'),
+       url('css/tiempos_headline-black-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+
+
+@font-face {
+  font-family: 'benton_sansregular';
+  src: url('bentonsans-regular_sot-webfont.woff2') format('woff2'),
+       url('css/bentonsans-regular_sot-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+background-color: #075d8f;
+}
+
+.container{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.mid-text{
+  position: absolute;
+  text-align: center;
+  z-index: 90;!important;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.ferryWave {
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  z-index: 99;
+  opacity: 0.5;
+  background-repeat: repeat;
+  animation: animate 20s linear infinite;
+  background-position: 0% 43%;
+  background-repeat: repeat no-repeat;
+  transform-origin: center bottom;
+}
+.ferry {
+  position: absolute;
+  z-index: 12;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-position: 50% 20%;
+  background-repeat: no-repeat;
+  transform-origin: center bottom;
+  -webkit-animation: rotation 24s infinite linear;
+}
+
+.line{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 100%;
+  background-position: 0 bottom;
+
+}
+.line2{
+  position: absolute;
+  width: 100%;
+  overflow: hidden;
+  height: 66%;
+  background: white;
+}
+.line-1{
+  z-index: 15;
+  opacity: 0.5;
+  
+}
+.line-2{
+  z-index: 10;
+  opacity: 0.7;
+}
+.line-3{
+  z-index: 10;
+  opacity: 0.7;
+}
+.line-front{
+  z-index: 15;
+  opacity: 0.2;
+position: relative;
+}
+
+.wave{
+  position: absolute;
+  left: 0;
+  width: 200%;
+  height: 100%;
+  background-repeat: repeat no-repeat;
+  background-position: 0 bottom;
+  transform-origin: center bottom;
+}
+.wave1{
+  -webkit-background-size: 50% 80px;
+  background-size: 50% 80px;
+  animation: animate 12s reverse infinite;
+  
+}
+.wave2{
+  -webkit-background-size: 50% 100px;
+  background-size: 50% 100px;
+  animation: animate 12s linear infinite;
+}
+.wave3{
+  -webkit-background-size: 50% 80px;
+  background-size: 100% 80px;
+  animation: animate 12s linear infinite;
+}
+
+
+@keyframes animate {
+  0% {
+    background-position-x: 0;
+  }
+  100% {
+    background-position-x: 100vw;
+  }
+  }
+
+h1 {
+  font-family: 'tiempos_headlineblack', serif;
+  font-size: 56px;
+
+  }
+
+h2 {
+  font-family: 'tiempos_headlineblack', serif;
+  font-size: 22px;
+
+}
+h3 {
+  font-family: 'benton_sansregular', sans-serif;
+font-size: 16px;
+  line-height: 34px;
+
+}
+h4 {
+  font-family: 'benton_sansbold', sans-serif;
+font-size: 16px;
+  text-transform: uppercase; 
+  padding-bottom: 50px;
+  color: #075d8f;
+}
+
+
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(1deg);
+  }
+  50% {
+    -webkit-transform: rotate(0deg);
+  }
+  75% {
+    -webkit-transform: rotate(-1deg);
+  }
+  100% {
+    -webkit-transform: rotate(0deg);
+  }
+}
+.city {
+  position: fixed;
+  z-index: -100;
+  transform: translate(-0%, -77%);
+  width: 100%;
+  height: 100%;
+}
+ /*! Graphic elements */  
+ .parent {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.image1 {
+  position: relative;
+  width: 100vw;
+  top: 2vh;
+  left: 0;
+
+}
+
+.image2 {
+  position: absolute;
+  width: 30vw;
+  min-width: 350px;
+  top: 1.5vh;
+
+}
+
+.flowChart01 {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  display: flexbox;
+  margin-top: 10%;
+} 
+
+.flex-grid {
+  display: flex;
+}
+.flex-grid .col {
+  flex: 1;
+}
+.flex-grid-thirds {
+  display: flex;
+  justify-content: space-between;
+}
+.flex-grid-thirds .col {
+  width: 32%;
+}
+
+@media (max-width: 400px) {
+  .flex-grid,
+  .flex-grid-thirds {
+    display: block;
+    .col {
+      width: 100%;
+      margin: 0 0 10px 0;
+    }
+  }
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.flex-grid { 
+  margin: 0 0 20px 0;
+}
+.col {
+  background: transparent;
+  padding: 20px;
+}
+
+.blue {
+  background-color: #075d8f;
+  height: 100vh;
+  width: 100vw;
+
+}
+.button {
+  background-color: #d00c0c;
+  height: 120px;
+  width: 120px;
+  border: none;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  border-radius: 50%;
+  transition: 0.7s;
+}
+
+.button:hover {
+  background-color: #460303;
+  transition: 0.7s;
+  transform: scale(150%);
+}
